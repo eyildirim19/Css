@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*
+            stil uygulamak için html elementleri seçilir. Buna selector konusu denir;
+
+            stiller scope içerisine yazılır
+            selector
+            {
+                ozellik:deger
+            }
+        */
+        /**element seçici*/
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        p {
+            font-size: 12px;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        b {
+            color: green;
+            text-decoration: underline;
+        }
+
+        /* element seçicilerin dezeavantajı seçilen bütün elementleri etkilemesidir...Diğer seçiciler kullanılanılanı
+            id seçici ( tek element seçmek) *
+            class seçici (ortak element seçmek) *
+            child seçici
+            attribute seçici
+        */
+
+        /*
+            ID SEÇİCİ
+          */
+        #baslik1 {
+            color: rgb(156 200 20);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgb(255 175 60);
+        }
+
+        #selectorList {
+            font-family: Verdana;
+            font-size: 12px;
+            list-style-type: none; /** none : listelerdeki list iconlarını yok eder*/
+        }
+    </style>
+</head>
+<body>
+    <!-- sayfa içi yazılan stillere (css) internal css denir.. Çok fazla tercih edilmez... çünkü sayfada sadece html kodlarının olması beklenir...-->
+    <!--<center> <font color="green">  <h1>MERHABA CSS</h1> </font> </center>-->
+    <div>
+        <h1>MERHABA CSS</h1>
+    </div>
+    <p>
+        Bu gün günlerden css. Css önemli bir web teknolojisidir...
+        <br />
+        Css <b>Cascading Style Sheet</b> html elementlere stil uyarlamak için kullanılan dildir...
+    </p>
+
+    <!--id => önemli bir html attributesidir. elementin sayfadaki kimliğidir. id elementlere özel verilmelidir. yani unique (benzersiz) olmalıdır.
+        NOT : html bir progralama dili olmadığı için aynı id bir sayfa birden fazla elemente verilerse hata vermeyecektir. Ancak bu hata yapmadığımız anlamına gelmez. stil, script seçicilerde hatalı işlem yapmamıza neden olur..
+        -->
+    <h1 id="baslik1"> CSS SEÇİCİLER</h1>
+    <ul id="selectorList">
+        <li> ID seçici </li>
+        <li> Class seçici</li>
+        <li> Child seçici </li>
+        <li> Attribute seçici </li>
+    </ul>
+
+    <a href="Selector.html">Diğer Seçicileri Gör</a>
+
+    <br />
+    <br />
+
+    <!--Inline Style-->
+    <div style="color:red; background-color:black; margin-bottom:10px;">  İnline Stiller elemtin stil attirbutesine yazılır..</div>
+    <div style="color:deeppink; background-color:pink;">  İnine stiller iyidir ancak tvsiye edilmez </div>
+
+</body>
+</html>

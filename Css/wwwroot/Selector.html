@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #p1 {
+            color: deeppink;
+        }
+
+        #p2 {
+            color: brown;
+        }
+        /**class seçici***/
+        .ptext {
+            font-weight: bold;
+            font-family: Verdana;
+            font-size: 14px;
+        }
+
+        .dvsari {
+            background-color: yellow;
+        }
+        .dvkirmizi {
+            background-color: red;
+        }
+        .ortaktext {
+            font-size: 14px;
+            font-family: Cooper;
+            color: white;
+            /* padding-left:10px;
+            padding-top:10px;
+            padding-right:10px;
+            padding-bottom:10px;*/
+            padding: 10px; /*bütün köşelerden 10px iç boşluk*/
+            border: 1px solid black;
+            margin: 10px; /** dış boşluk*/
+        }
+        /*  attribute seçici element[attribute=deger]*/
+        input[type=button] {
+            color: blue;
+        }
+
+        input[type=reset] {
+            color: red;
+        }
+
+        input[type=text] {
+            border: none;
+            border-bottom: 1px dashed black;
+        }
+
+            input[type=text]:focus {
+                outline: none;
+                width: 350px;
+            }
+    </style>
+</head>
+<body>
+    <p id="p1" class="ptext"> Paragraf 1 </p>
+    <p id="p2" class="ptext"> Paragraf 2 </p>
+    <p> Paragraf 3 </p>
+    <h1 class="ptext">Başlık</h1>
+    <div class="dvsari ortaktext">
+        1. Div
+    </div>
+    <div class="dvkirmizi ortaktext">
+        2. Div
+    </div>
+    <div class="dvsari ortaktext">
+        3. Div
+    </div>
+    <div class="dvkirmizi ortaktext">
+        4. Div
+    </div>
+    <form>
+        <input type="text" placeholder="Kullanıcı Adınız" />
+        <br /><br /><br />
+        <input name="b" type="button" value="Kaydet" />
+        <input name="a" type="reset" value="Vazgeç" /> <!--form içerisindeki elementlerin değerlerini resetlemek için kullanılır-->
+    </form>
+
+
+</body>
+</html>
