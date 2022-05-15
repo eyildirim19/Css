@@ -1,0 +1,118 @@
+﻿body {
+    margin: 0px;
+}
+
+#header {
+    background-color: #3f475f;
+    height: 35px;
+    padding-top: 15px;
+}
+
+#headerIc {
+    width: 970px;
+    margin: 0px auto;
+}
+
+#content {
+    width: 970px;
+    /*margin: 10px auto 30px auto;*/
+    margin: 0 auto;
+}
+
+#dvResim {
+    height: 250px;
+}
+
+#dvIcerik {
+}
+
+
+#Logo {
+    width: 170px;
+    float: left; /**pbjenin açılış yönünü belirler...left=> sola yaslı*/
+}
+
+#txtSearch {
+    padding: 0px 5px;
+    border-radius: 10px;
+    margin: 0px;
+    border: 0px;
+    height: 25px;
+    background-color: lightgray;
+    color: #3f475f;
+    float: right; /**sağa yaslı*/
+}
+
+    #txtSearch:focus {
+        outline: none;
+    }
+
+.operation {
+    color: white;
+    font-family: Verdana;
+    font-size: 10px;
+}
+
+
+#dv1 {
+    background-color: #ff6a00;
+    width: 479px;
+    height: 144px;
+    float: left;
+    border:3px solid black;
+}
+
+#dv2 {
+    background-color: #00ff21;
+    width: 485px;
+    height: 150px;
+    float: left;
+}
+
+#dv3 {
+    background-color: white;
+    border: 1px solid #b200ff;
+    height: 200px;
+    position:relative; /**içerisindeki absolute elementi tutması için set edildir....*/
+
+}
+
+.clear {
+    clear:both; /*her iki taraftadanda düzelt*/
+}
+
+#kutu {
+    width: 60px;
+    height: 60px;
+    background-color: #b200ff;
+    position:absolute; /*   diğer elemetnlerden bağımsız hale gelir. Referans noktası önceki element değil çerçevedir.. 
+        
+        rigth, left, bottom, top özelikleri absolute ve fixed  elementlere uygulanaır
+
+        . eğer  absolute elementi bulunduüu alanda bağımsız yapmak istiyorsak parent elementinin position'i relative set edilmelidir...
+    */
+
+    right:10px;
+    bottom:10px;
+    z-index:1;
+}
+
+#kutu2 {
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index:2;
+}
+#son{
+    position:absolute;
+    background-color:deeppink;
+    width:60px;
+    height:60px;
+    bottom:210px;
+    right:340px;
+    z-index:5;
+
+}
