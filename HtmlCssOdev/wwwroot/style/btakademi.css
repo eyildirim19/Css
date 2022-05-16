@@ -1,0 +1,140 @@
+﻿body {
+    margin: 0px;
+    font-family: Verdana;
+}
+
+
+#ust1 {
+    height: 75px;
+    background-color: #0082C4;
+}
+
+#ust2 {
+    background-color: #fcfcfc;
+    height: 75px;
+}
+
+#navbar {
+    background-color: #121F27;
+    height: 100px;
+}
+
+.container {
+    width: 1270px;
+    margin: 0 auto;
+}
+
+.ustSol {
+    height: 75px;
+    width: 600px;
+    float: left;
+}
+
+.ustSag {
+    height: 75px;
+    width: 500px;
+    float: right;
+}
+
+#btnSearch {
+    background-image: url('/images/search_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 35px;
+    float: left;
+    cursor: pointer;
+}
+
+#txtSearch {
+    height: 35px;
+    width: 300px;
+    border: none;
+    float: left;
+    padding: 0px 20px;
+    font-size: 15px;
+    font-family: Verdana;
+    color: gray;
+}
+
+    #txtSearch:focus {
+        outline: none;
+    }
+
+#searchPanel {
+    width: 380px;
+    float: right;
+    margin-top: 15px;
+}
+
+#MenuKisayol {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top:10px;
+}
+
+    /**içindeki li*/
+    #MenuKisayol li {
+        float:left;
+    }
+
+    #MenuKisayol li a{
+        color:white;
+        text-decoration:none;
+        font-size:17px;
+    }
+
+#sperator{
+    margin:0px 10px;
+}
+
+#sosyalmedya {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#sosyalmedya li{
+    float:left;
+    padding:0px 10px;
+    width:30px;
+    text-align:center;
+}
+    #sosyalmedya li i {
+        color:white;
+    }
+
+.clearFix{
+    clear:both;
+}
+
+#logo{
+    width:268px;
+}
+
+#soru1{
+
+    float:left;
+}
+
+#soru2 {
+    float: right;
+    padding-top: 11px;
+}
+#soruSol{
+    float:left;
+    width:50px;
+}
+#soruSag{
+    float:right;
+    height:50px;
+    padding-left:10px;
+    
+}
+.soruIconText{
+    font-size:50px;
+}
